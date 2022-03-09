@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Adelaide 36ers not Official Website</title>
     <!-- css link -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- 
+    <link rel="stylesheet" href="css/style.css" />-->
 
     <!-- fontawesome CDN -->
     <link
@@ -16,45 +16,199 @@
     <!-- end of fontawesome CDN -->
 
     <link rel="shortcut icon" href="assets/fav.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CDN for Carousel -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Changa+One:ital@0;1&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <!-- 
+  <script src="https://kit.fontawesome.com/d7456ee4cf.js" crossorigin="anonymous"></script>-->
+
+    <!-- Bootstrap JS for carousel -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="container">
-      <!-- logo -->
-      <div id="logo">Adelaide 36ers</div>
-
-      <!-- navbar -->
-      <div id="navbar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <!--
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Privacy</a></li> 
-            -->
-          <li><a href="https://www.adelaide36ers.com/pages/club-staff">Contacts</a></li>
-          <!-- login Button -->
-            <!-- 
-          <li id="login"><a href="#">Login</a></li>
-            -->
-        </ul>
+    <header>
+      <div class="navWrapper">
+        <nav class="menuBar">
+          <div class="logoContainer">
+            <h4 class="logo">
+              <span class="red"><span class="blue">.</span>fan</span
+              ><span class="blue">Shop</span>
+            </h4>
+          </div>
+          <div class="navigationContainer">
+            <ul class="navLinks">
+              <!-- 
+              <li><a class="navLink" href="#">Arrivals</a></li>-->
+              <li>
+                <a
+                  class="navLink"
+                  href="https://adelaide36ersstore.com/collections"
+                  >Clothing</a
+                >
+              </li>
+              <!-- 
+              <li><a class="navLink" href="#">Newsletter</a></li>-->
+              <li>
+                <a
+                  class="navLink"
+                  href="https://www.adelaide36ers.com/pages/club-staff"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
 
-      <!-- image -->
-      <div id="image">
-        <img src="assets/basketball_Player.png" alt="basketball player" />
+      <div class="textWrapper">
+        <div class="textContainer">
+          <h1 class="mainHeading">
+            Basketball<br />
+            is Back<span class="blue">.</span>
+          </h1>
+          <h2 class="subHeading">
+            Welcome to the promo landing page!<br />
+            The most convenient location to purchase your merchandise.
+          </h2>
+          <span
+            ><button
+              class="mainButton"
+              onclick="window.location.href='https://adelaide36ersstore.com';"
+            >
+              Shop now
+            </button></span
+          >
+        </div>
       </div>
+    </header>
 
-      <!-- content -->
-      <div id="content">
-        <h2>NBL</h2>
-        <h4>National Basketball League</h4>
-      </div>
+    <main>
+      <section class="newArrivals">
+        <h2 class="text-center">New Arrivals<span class="red">.</span></h2>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/1.png"
+                class="d-block w-30 mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/2.png"
+                class="d-block w-30 mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/3.png"
+                class="d-block w-30 mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        <div class="btnContainer">
+          <!-- <button class="button redBack">Add to cart</button> -->
+          <button
+            class="button blueBack"
+            onclick="window.location.href='https://adelaide36ersstore.com/collections/new';"
+          >
+            See more
+          </button>
+        </div>
+      </section>
 
-      <!-- icons -->
-      <div id="icons">
-        <!-- visit => "fontawesome.com" for icons -->
+      <section class="clothingSection">
+        <div class="clothingWrapper">
+          <div class="clothingContainer">
+            <a href="https://adelaide36ersstore.com/collections/youth">
+              <div class="leftImg imageStyle"></div>
+              <div class="bottomBtn blueBack">
+                <p>YOUTH</p>
+              </div>
+            </a>
+          </div>
+          <div class="clothingContainer">
+            <a href="https://adelaide36ersstore.com/collections/women">
+              <div class="rightImg imageStyle"></div>
+              <div class="bottomBtn redBack">
+                <p>WOMEN</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <h1>Sign Up and get deals to your Inbox<span class="red">.</span></h1>
+
+        <form action="https://formspree.io/f/mknybekg" method="POST">
+          <input type="email" placeholder="Email Address" name="email" />
+          <button class="subscribe" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h4 class="logo">
+        <span class="red"><span class="blue">.</span>fan</span
+        ><span class="blue">Shop</span>
+      </h4>
+      <div class="socialContainer">
         <a href="https://www.facebook.com/Adelaide36ers"
           ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/Adelaide36ers"
+          ><i class="fab fa-twitter"></i
         ></a>
         <a href="https://www.instagram.com/adelaide36ers"
           ><i class="fab fa-instagram"></i
@@ -62,26 +216,7 @@
         <a href="https://www.youtube.com/user/36ersTV"
           ><i class="fab fa-youtube"></i
         ></a>
-        <a href="https://twitter.com/Adelaide36ers"
-          ><i class="fab fa-twitter"></i
-        ></a>
       </div>
-
-      <!-- pagination -->
-      <div id="pagination">
-        <!-- left arrow -->
-        <!-- 
-        <a href="#"><i class="fas fa-angle-left"></i></a>
-        -->
-        <!-- right arrow -->
-        <!-- 
-        <a href="#"><i class="fas fa-angle-right"></i></a>
-        -->
-      </div>
-
-      <!-- lines -->
-      <div id="line1"></div>
-      <div id="line2"></div>
-    </div>
+    </footer>
   </body>
 </html>

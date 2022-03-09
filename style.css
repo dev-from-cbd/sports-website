@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: "Anton", sans-serif;
+}
+
+.red {
+  color: #ec483e;
+}
+
+.blue {
+  color: #57969b;
+}
+
+.redBack {
+  background-color: #ec483e;
+}
+
+.blueBack {
+  background-color: #57969b;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/basketball.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+header::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(29, 28, 28, 0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+}
+
+/* NAVIGATION BAR */
+
+.navWrapper {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.menuBar {
+  display: flex;
+  width: 90%;
+  padding: 20px 0px 0px 0px;
+}
+
+.logoContainer,
+.navigationContainer {
+  display: flex;
+}
+
+.logoContainer {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.logo {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.navigationContainer {
+  flex: 2;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #f8f7f5;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.3px;
+  position: relative;
+}
+
+.navLink:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  background: #f8f7f5;
+}
+.navLink:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.navLink:hover {
+  color: #f8f7f5;
+}
+
+/* HEADER TEXT AND BUTTON */
+.textWrapper {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.mainHeading {
+  color: #f8f7f5;
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 82px;
+  margin-top: 7%;
+}
+
+.subHeading {
+  color: #f8f7f5;
+  font-size: 1.2rem;
+  padding-top: 30px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.mainButton {
+  height: 55px;
+  width: 300px;
+  margin-top: 40px;
+  border: 2px solid #f8f7f5;
+  background: #ec483e;
+  color: #f8f7f5;
+  cursor: pointer;
+  font-size: 1.9rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+/* NEW ARRIVALS SECTION */
+.newArrivals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  height: 90vh;
+  background: radial-gradient(circle, rgb(44, 44, 44) 0%, rgb(12, 12, 12) 43%);
+}
+
+.newArrivals > h2 {
+  font-size: 4rem;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+  color: #f8f7f5;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  height: 55px;
+  width: 200px;
+  margin: 5px;
+  border: 2px solid #f8f7f5;
+  color: #f8f7f5;
+  cursor: pointer;
+  font-size: 1.9rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+/* CLOTHING SECTION */
+
+.clothingSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/clothingBack.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+.clothingSection::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(80, 80, 80, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+}
+
+.clothingWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 80vh;
+  z-index: 3;
+}
+
+.clothingContainer {
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.leftImg {
+  background-image: url("images/pexels-wallace-chuck-3152044.jpg");
+  position: relative;
+}
+
+.rightImg {
+  background-image: url("images/pexels-kool-shooters-6076451.jpg");
+  position: relative;
+}
+
+.leftImg::after,
+.rightImg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(29, 28, 28, 0.2);
+  background-size: cover;
+}
+
+.leftImg:hover::after,
+.rightImg:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(29, 28, 28, 0.4);
+  background-size: cover;
+}
+
+.imageStyle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  transition: 0.5s ease-in;
+}
+
+.imageStyle:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.bottomBtn {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  opacity: 90%;
+  font-family: Anton;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomBtn:hover {
+  border: 2px solid #f8f7f5;
+}
+
+.bottomBtn > p {
+  text-decoration: none;
+  color: #f8f7f5;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+}
+
+.newsletter > h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #f8f7f5;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+form {
+  position: relative;
+  width: 50%;
+  margin-top: 25px;
+}
+
+input[type="email"] {
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  border: none;
+}
+
+input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  padding: 0 15px;
+  letter-spacing: 1.2px;
+  background-color: #cc0000;
+  color: #f8f7f5;
+  border: none;
+  outline: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #131313;
+  height: 15vh;
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > h4 {
+  font-size: 5rem;
+}
+
+.socialContainer a {
+  text-decoration: none;
+  color: #f8f7f5;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 95vh;
+  }
+  .menuBar {
+    flex-direction: column;
+  }
+  .logoContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .textContainer {
+    align-items: center;
+  }
+  .mainHeading {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 60px;
+  }
+  .subHeading {
+    display: none;
+  }
+  .mainButton {
+    margin-top: 40px;
+  }
+  .newArrivals {
+    padding: 0;
+    background: radial-gradient(
+      circle 550px,
+      rgb(44, 44, 44) 0%,
+      rgb(12, 12, 12) 43%
+    );
+    height: 80vh;
+  }
+  .newArrivals > h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .btnContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  form {
+    width: 90%;
+  }
+  .newsletter > h1 {
+    font-size: 1.8rem;
+  }
+}
